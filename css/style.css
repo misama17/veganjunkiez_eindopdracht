@@ -35,32 +35,49 @@ ul a {
 .hamburgermenu {
     background-color: #fe57b4;
     margin: 0;
-    line-height: 4.4;
+    line-height: 4.6;
     font-size: 0.8em;
-}
-
-.home_text{
-    font-size: 3em;
-    font-weight: lighter;
-    margin: 40px 20px 0 20px;
-    line-height: 2;
-    text-align: left;
 }
 
 h1{
     text-transform: uppercase;
     font-size: 1.6em;
     text-align: center;
-    margin: 50px 35px 50px 35px;
+    padding: 65px 35px 65px 35px;
+    margin: 0;
     font-weight: lighter;
 }
 
+.home_text {
+    font-size: 3em;
+    font-weight: lighter;
+    margin: 50px 20px 0 20px;
+    line-height: 2;
+    text-align: left;
+    padding: 0;
+}
+
 .flexcontainer_nav{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 5px 15px 5px 15px;
     justify-content: space-between;
+    background-color: white;
+}
+
+.flexbox_nav {
+    margin: 0 20px 0 20px;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 85px;
 }
 
 .pijl{
@@ -353,7 +370,7 @@ ul {
     padding: 0;
 }
 
-h2 {
+.suggesties {
     text-transform: uppercase;
     color: black;
     text-align: center;
@@ -361,13 +378,13 @@ h2 {
 }
 
 .locatie {
-    margin: 0 0 40px 0;
+    margin: 0 0 44px 0;
 }
 
 .ster_blauw_locaties {
     position: absolute;
-    right: 80px;
-    bottom: 40px;
+    right: 60px;
+    bottom: 30px;
     width: 40px;
     transform: rotate(15deg);
 }
@@ -384,8 +401,8 @@ h2 {
     position: absolute;
     transform: rotate(15deg);
     left: 30px;
-    bottom: 115px;
-    width: 60px;
+    bottom: 100px;
+    width: 50px;
 }
 
 .ster_oranje_locaties {
@@ -406,7 +423,31 @@ h2 {
 .hart_roze_locaties {
     position: absolute;
     left: 90px;
-    top: 330px;
+    top: 345px;
     width: 40px;
     transform: rotate(15deg);
+}
+
+footer {
+    background-color: #fe57b4;
+    text-align: center;
+    color: white;
+}
+
+footer .logo {
+    height: 4em;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 20px 10px 20px;
+}
+
+footer p {
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+}
+
+footer a {
+    color: white;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
 }
